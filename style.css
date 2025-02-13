@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+header{
+    background-color: #014E56;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 77px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    width: 153px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: inherit;
+    color: white;
+    border: 2px solid #FFFFFF;
+}
+.hero{
+    background: #014E56;
+    padding-top: 120px;
+    padding-bottom: 176px;
+}
+.hero h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    letter-spacing: 0px;
+    color: white;
+}
+.hero p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: white;
+    width: 650px;
+}
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+}
+.meet h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+}
+.meet{
+    background: #004047;
+    padding-top: 71px;
+    padding-bottom: 148px;
+}
+.card{
+    width: 350px;
+    height: 274px;
+    background: #012F34;
+    text-align: center;
+    padding-top: 44px;
+    margin-top: 69px;
+}
+.card h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #79C8C7;
+    margin-top: 23px;
+}
+.card p{
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+}
+.btn0{
+    width: 56px;
+    height: 56px;
+    background: #F67E7E;
+    border: none;
+    font-size: 24px;
+    border-radius: 50%;
+    margin-top: 16px;
+}
+.ota{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.some{
+    background: #012F34;
+    padding: 133px 0;
+}
+.some h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+    margin-bottom: 52px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.get{
+    background: #F67E7E;
+    padding: 76px 0;
+}
+.get .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.get h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: black;
+}
+footer{
+    background: #002529;
+    padding: 50px 0;
+}
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn1{
+    font-size: 24px;
+    background-color: inherit;
+    border: none;
+    color: white;
+    display: none;
+}
+@media(max-width:768px){
+    .hero .container{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero p{
+        margin-left: 50px;
+    }
+    .ota{
+        flex-wrap: wrap;
+        padding: 0 28px;
+        justify-content: center;
+        gap: 40px;
+    }
+    .card{
+        width: 281px;
+        height: 253px;
+    }
+    .box img{
+        width: 100px;
+    }
+    .box{
+        padding: 0 40px;
+    }
+    .get .container{
+        padding: 0 48px;
+    }
+    footer .container{
+        padding: 0 56px;
+    }
+}
+@media(max-width:375px){
+    nav{
+        display: none;
+    }
+    header .btn{
+        display: none;
+    }
+    .btn1{
+        display: block;
+    }
+    header .container{
+        padding: 0 24px;
+        padding-top: 48px;
+    }
+    .hero p{
+        margin-left: 0;
+        width: 327px;
+        margin-left: 20px;
+    }
+    .box{
+        flex-direction: column;
+        gap: 50px;  
+    }
+    .get .container{
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 24px;
+    }
+}
